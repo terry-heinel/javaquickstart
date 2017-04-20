@@ -82,16 +82,20 @@ under the License.
 		</dependency>
 		<dependency>
 			<groupId>org.apache.flink</groupId>
-			<artifactId>flink-streaming-java_2.10</artifactId>
+			<artifactId>flink-streaming-java_2.11</artifactId>
 			<version>${flink.version}</version>
 		</dependency>
 		<dependency>
 			<groupId>org.apache.flink</groupId>
-			<artifactId>flink-clients_2.10</artifactId>
+			<artifactId>flink-clients_2.11</artifactId>
 			<version>${flink.version}</version>
 		</dependency>
-
-		<!-- explicitly add a standard loggin framework, as Flink does not (in the future) have
+		<dependency>
+			<groupId>org.apache.flink</groupId>
+			<artifactId>flink-connector-wikiedits_2.11</artifactId>
+			<version>${flink.version}</version>
+		</dependency>
+		<!-- explicitly add a standard logging framework, as Flink does not (in the future) have
 			a hard dependency on one specific framework by default -->
 		<dependency>
 			<groupId>org.slf4j</groupId>
